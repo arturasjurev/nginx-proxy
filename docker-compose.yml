@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  app:
+    build: app
+    ports:
+      - "8181:80"
+
+  app1:
+    build: app1
+    ports:
+      - "8282:80"
+
+  proxy:
+    build: proxy
+    ports:
+      - "80:80"
